@@ -68,8 +68,7 @@ section.post {
 		color: $secondary;
 	}
 	.post-author {
-		text-transform: uppercase;
-		color: $warning;
+		color: $text-color;
 	}
   .post-cat {
 		text-transform: uppercase;
@@ -102,6 +101,7 @@ a.read-more {
   padding-bottom: 50px;
   .post-header {
     margin: 0 auto 50px;
+    color: $danger;
   }
 }
 

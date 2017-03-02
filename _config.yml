@@ -11,8 +11,12 @@ url: https://monday-factory.github.io/nette-tutors
 owner:
   name: Monday Factory
   homepage: https://mondayfactory.com
-posts:
-  authors: [Pavel Janda]
+  google:
+    analytics:
+
+authors:
+  paveljanda:
+    name: Pavel Janda
 
 #
 ###################################
