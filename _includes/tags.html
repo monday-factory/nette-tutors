@@ -1,23 +1,27 @@
+<p class="contribution-notes">
+  
+</p>
+
 <h5><i class="fa fa-tag success-text-color"></i> Tags</h5>
-<ul class="tag-cloud">
-{% for tag in site.tags %}
-  <li style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
-    <a class="post-tag success-text-color" href="#{{ tag | first | slugize }}">
-      {{ tag | first }}
-    </a>
-  </li>
-{% endfor %}
-</ul>
 
 <div class="tag-list">
 {% for tag in site.tags %}
   <div class="tag-group">
     {% capture tag_name %}{{ tag | first }}{% endcapture %}
-    <h5 class="tag-group-title" id="{{ tag_name | slugize }}">{{ tag_name }}</h5>
+    <h5 class="tag-group-title" id="{{ tag_name | slugize }}">
+      {{ tag_name }}
+    </h5>
+
     {% for post in site.tags[tag_name] %}
-    <article class="tag-item">
-      <a class="tag-item-title success-text-color" href="{{ site.url }}{{ post.url }}">{{post.title}}</a>
-    </article>
+      {% if page.title == post.title %}
+        {% assign class = 'active' %}
+      {% else %}
+        {% assign class = '' %}
+      {% endif %}
+
+      <article class="tag-item {{ class }}">
+        <a class="tag-item-title success-text-color" href="{{ site.url }}{{ post.url }}">{{post.title}}</a>
+      </article>
     {% endfor %}
   </div>
 {% endfor %}

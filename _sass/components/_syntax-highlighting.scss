@@ -7,7 +7,7 @@ pre, code {
   font-family: $font-family-monospace;
   color: #525252;
   font-size: 0.9em;
-  background-color: #f8f8f8;
+  background-color: $background-color;
   font-size: ($font-size-base - 3);
 }
 code {

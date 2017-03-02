@@ -9,9 +9,15 @@
         {% capture cat_name %}{{ cat | first }}{% endcapture %}
         <h5 class="tag-group-title" id="{{ cat_name | slugize }}">{{ cat_name }}</h5>
         {% for post in site.categories[cat_name] %}
-        <article class="tag-item">
-          <a class="tag-item-title" href="{{ site.url }}{{ post.url }}">{{post.title}}</a>
-        </article>
+          {% if page.title == post.title %}
+            {% assign class = 'active' %}
+          {% else %}
+            {% assign class = '' %}
+          {% endif %}
+
+          <article class="tag-item {{ class }}">
+            <a class="tag-item-title" href="{{ site.url }}{{ post.url }}">{{post.title}}</a>
+          </article>
         {% endfor %}
       </div>
     {% endfor %}

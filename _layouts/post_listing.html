@@ -19,14 +19,14 @@ layout: default
       <span class="post-date">
         {{ post.date | date: "%-d %b %Y" | upcase }}
       </span>
-      {% if post.categories.size > 0 %}
-      <span class="bullet"></span>
-      {% for cat in post.categories %}
-        <a class="post-cat" href="{{ site.url }}/categories/#{{ cat }}">{{ cat }}</a>
-        {% unless forloop.last %}
-        <span>/</span>
-        {% endunless %}
-      {% endfor %}
+      {% if post.tags.size > 0 %}
+        <span class="bullet"></span>
+        {% for tag in post.tags %}
+          <span class="post-tag">{{ tag }}</span>
+          {% unless forloop.last %}
+          <span>/</span>
+          {% endunless %}
+        {% endfor %}
       {% endif %}
       <span class="bullet"></span>
       {{ author_name }}
