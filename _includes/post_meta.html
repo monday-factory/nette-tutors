@@ -1,0 +1,13 @@
+<p class="post-meta">
+  <span class="post-date">
+    {{ include.p.date | date: "%-d %b %Y" | upcase }}
+  </span>
+  <span class="bullet"></span>
+
+  {% include read_time.html %}
+
+  <span class="bullet"></span>
+  <span class="post-author">
+    {{ author_name }}
+  </span>
+</p>
