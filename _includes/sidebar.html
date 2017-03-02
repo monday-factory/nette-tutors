@@ -1,23 +1,27 @@
 {% if page.author %} {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %} {% endif %}
 
-<div class="cover-card table-cell table-middle">
-  {% if author.avatar %}
-  <img src="{{ site.url }}/img/{{ author.avatar }}" alt="" class="avatar">
-  {% endif %}
-  <a href="{{ site.url }}/" class="author_name">{{ author.name }}</a>
-  <span class="author_job">{{ author.job }}</span>
-  <span class="author_bio mbm">{{ author.bio }}</span>
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="{{ site.url }}/">home</a>
-      </li>
-      {% for page in site.pages %} {% if page.title %}
-      <li class="nav-item">
-        <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
-      </li>
-      {% endif %} {% endfor %}
-    </ul>
-  </nav>
-  {% include social-links.html %}
+<div class="cover-card table-cell table-middle sidebar">
+  <div class="tag-list">
+    <h1>
+      <a href="{{ site.url }}/">{{ site.name }}</a>
+    </h1>
+
+    {% for cat in site.categories %}
+      <div class="tag-group">
+        {% capture cat_name %}{{ cat | first }}{% endcapture %}
+        <h5 class="tag-group-title" id="{{ cat_name | slugize }}">{{ cat_name }}</h5>
+        {% for post in site.categories[cat_name] %}
+        <article class="tag-item">
+          <a class="tag-item-title" href="{{ site.url }}{{ post.url }}">{{post.title}}</a>
+        </article>
+        {% endfor %}
+      </div>
+    {% endfor %}
+
+    <div class="tag-group archive-group">
+        <article class="tag-item">
+          <a class="tag-item-title warning-text-color" href="{{ site.url }}archive">Archive</a>
+        </article>
+      </div>
+  </div>
 </div>

@@ -46,7 +46,8 @@ section.post {
 
 // Post title
 .post-title {
-
+  color: $danger;
+  font-size: 1.5rem;
 }
 
 .post-title-link {
@@ -72,11 +73,21 @@ section.post {
 	}
   .post-cat {
 		text-transform: uppercase;
-		color: $warning;
+		color: $primary;
 	}
   .read-time {
     color: $primary;
   }
+}
+
+.bullet {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: $text-color;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin: 0 0.3em 2px;
 }
 
 // Read more buttons

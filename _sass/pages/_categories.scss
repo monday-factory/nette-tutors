@@ -1,0 +1,70 @@
+ul.tag-cloud {
+  padding: 2em 0 3em;
+  margin: 0;
+  overflow: hidden;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    margin-right: .5em;
+    a.post-tag {
+      border-radius: 0.2em;
+    }
+  }
+}
+
+.tag-list {
+  display: inline-block;
+  width: 190px;
+  text-align: left;
+
+  .tag-group {
+    margin-bottom: 0.8em;
+    border-top: 1px dashed rgba(0,0,0,.15);
+    &:first-of-type {
+      border-top: none;
+    }
+    .tag-group-title {
+      margin: 0.5em 0 0;
+      color: $text-color;
+      text-transform: capitalize;
+      font-weight: normal;
+    }
+    .tag-item {
+      margin-bottom: .1em;
+      a {
+        font-size: $font-size-sm;
+        &:hover,
+        &:focus {
+          color: lighten($text-color, 24%);
+        }
+      }
+    }
+  }
+  .archive-group {
+    height: 3em;
+    line-height: 3em;
+  }
+}
+
+.cat-list {
+  .cat-group {
+    margin-bottom: 2em;
+    .cat-group-title {
+      color: $primary;
+      text-transform: capitalize;
+    }
+
+    .cat-item {
+      padding-left: 1em;
+      margin-bottom: .5em;
+      a {
+        color: $danger;
+        &:hover,
+        &:focus {
+          color: lighten($danger, 24%);
+        }
+      }
+    }
+  }
+}

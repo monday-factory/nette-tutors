@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Post with Large Feature Image and Text"
+title: "Post with Large Feature"
 excerpt: "Custom written post descriptions are the way to go... if you're not lazy."
-categories: [paragraph, feature photo]
+categories: [feature photo]
 author: mike
 comments: true
 image:
