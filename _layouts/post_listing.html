@@ -3,29 +3,29 @@ layout: default
 ---
 
 {% for post in site.posts %}
-<section class="post">
-  <header class="post-header">
-    {% if post.author %}
-      {% assign author_name = site.authors[post.author].name %}
-    {% else %}
-      {% assign author_name = site.owner.name %}
-    {% endif %}
+  <section class="post">
+    <header class="post-header">
+      {% if post.author %}
+        {% assign author_name = site.authors[post.author].name %}
+      {% else %}
+        {% assign author_name = site.owner.name %}
+      {% endif %}
 
-    <h2>
-      <a href="{{ site.url }}{{ post.url }}" class="post-title" title="{{ post.title }}">{{ post.title }}</a>
-    </h2>
+      <h2>
+        <a href="{{ site.url }}{{ post.url }}" class="post-title" title="{{ post.title }}">{{ post.title }}</a>
+      </h2>
 
-    {% include post_meta.html p = post %}
+      {% include post_meta.html p = post %}
 
-    </header>
+      </header>
 
-    {% if post.excerpt %}
-    <div class="post-description">
-      <p>
-        {{ post.excerpt }}
-      </p>
-    </div>
-    {% endif %}
+      {% if post.excerpt %}
+        <div class="post-description">
+          <p>
+            {{ post.excerpt }}
+          </p>
+        </div>
+      {% endif %}
 
-</section>
+  </section>
 {% endfor %}
