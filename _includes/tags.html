@@ -1,8 +1,8 @@
-<h5><i class="fa fa-tag"></i> Tags</h5>
+<h5><i class="fa fa-tag success-text-color"></i> Tags</h5>
 <ul class="tag-cloud">
 {% for tag in site.tags %}
   <li style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
-    <a class="post-tag" href="#{{ tag | first | slugize }}">
+    <a class="post-tag success-text-color" href="#{{ tag | first | slugize }}">
       {{ tag | first }}
     </a>
   </li>
@@ -16,7 +16,7 @@
     <h5 class="tag-group-title" id="{{ tag_name | slugize }}">{{ tag_name }}</h5>
     {% for post in site.tags[tag_name] %}
     <article class="tag-item">
-      <a class="tag-item-title" href="{{ site.url }}{{ post.url }}">{{post.title}}</a>
+      <a class="tag-item-title success-text-color" href="{{ site.url }}{{ post.url }}">{{post.title}}</a>
     </article>
     {% endfor %}
   </div>
