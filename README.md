@@ -1,37 +1,45 @@
-## Welcome to GitHub Pages
+### Update 03/08/2016
+I'm working on making leonids a [jekyll theme](https://jekyllrb.com/docs/themes/) so that people can easily install the theme without having to fork or download anything from here. Actually the first gem version is published, you can install it by following the official [doc](https://jekyllrb.com/docs/themes/). You can find the rubygem version [here](https://rubygems.org/gems/leonids). But it will be on beta until I can finish the doc of how you can install leonids with the rubygem version.
 
-You can use the [editor on GitHub](https://github.com/monday-factory/nette-tutors/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Update 05/06/2016
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Important! It's better to download the gzipped files instead of forking the repo. I would really appreciate if you could give me a star. 😁
 
-### Markdown
+This project is under MIT license, so feel free to make it your own.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Leonids Jekyll Themes
 
-```markdown
-Syntax highlighted code block
+**[Leonids](http://renyuanz.github.io/leonids)** is a clean Jekyll theme perfect for powering your GitHub hosted blog.
 
-# Header 1
-## Header 2
-### Header 3
+## What is Leonids?
 
-- Bulleted
-- List
+* Responsive templates. Looking good on mobile, tablet, and desktop.
+* Simple and clear permalink structure.
+* Support for Disqus Comments.
+* Support for multi-authors.
+* **And** the Leonids (/ˈliːənɪdz/ lee-ə-nidz) are a prolific meteor shower associated with the comet [Tempel-Tuttle](https://en.wikipedia.org/wiki/55P/Tempel%E2%80%93Tuttle).
 
-1. Numbered
-2. List
+See a [demo](http://renyuanz.github.io/leonids/) hosted on GitHub.
 
-**Bold** and _Italic_ and `Code` text
+## Quick setup
 
-[Link](url) and ![Image](src)
+```
+git clone https://github.com/renyuanz/leonids
+cd leonids
+jekyll server
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Check out your awesome blog at `http://localhost:4000` and Cheers!
 
-### Jekyll Themes
+## Running with Docker
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/monday-factory/nette-tutors/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```
+docker run --rm -it --volume=$PWD:/srv/jekyll -p 4000:4000 jekyll/jekyll:pages jekyll serve --watch --force_polling
+```
 
-### Support or Contact
+## TODO
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- [ ] Build a timeline page.
+- [ ] Build a portfolio page.
+- [ ] Redesign categories page. Ref: [dribbble: blog category section By Ilja Miskov](https://dribbble.com/shots/2274792-Blog-Category-Selection)
+- [ ] Multi languages support.
