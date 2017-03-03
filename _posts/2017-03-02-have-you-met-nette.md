@@ -4,6 +4,7 @@ title: "Have you met Nette?"
 categories: [Quick start]
 tags: [official]
 author: paveljanda
+order: "1"
 ---
 
 Let's start the first chapter of **{{ site.name }}** with an introduction into the ecosystem around the **[Nette framework][link-nette]**.

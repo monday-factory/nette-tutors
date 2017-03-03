@@ -8,7 +8,9 @@
       <div class="tag-group">
         {% capture cat_name %}{{ cat | first }}{% endcapture %}
         <h5 class="tag-group-title" id="{{ cat_name | slugize }}">{{ cat_name }}</h5>
-        {% for post in site.categories[cat_name] %}
+        {% assign sorted_posts = site.categories[cat_name] | sort:"order" %}
+
+        {% for post in sorted_posts %}
           {% if page.title == post.title %}
             {% assign class = 'active' %}
           {% else %}
