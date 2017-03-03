@@ -4,7 +4,14 @@
   </span>
   <span class="bullet"></span>
 
-  {% include read_time.html %}
+  <span class="read-time" title="Estimated read time">
+    {% assign words = include.p.content | number_of_words %}
+    {% if words < 150 %}
+      1 min read
+    {% else %}
+      {{ words | divided_by:150 }} mins read
+    {% endif %}
+  </span>
 
   <span class="bullet"></span>
   <span class="post-author">
