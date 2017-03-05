@@ -31,8 +31,10 @@ ul.tag-cloud {
     }
     .tag-item {
       margin-bottom: .1em;
+      position: relative;
       &.active {
         font-weight: bold;
+        text-decoration: underline;
       }
       a {
         font-size: $font-size-sm;
