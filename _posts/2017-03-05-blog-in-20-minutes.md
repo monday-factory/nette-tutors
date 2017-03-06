@@ -7,9 +7,9 @@ author: paveljanda
 order: "1"
 ---
 
-There are plenty of frameworks that start their tutorials with a example blog-like application. The reason for it is pretty obvious - you get in touch with powerful tools like forms, database layer and templating engine but it is still simple enough so you don't get stuck with `DIC` configuration and other more complex topics.
+There are plenty of frameworks that start their tutorials with an example blog-like application. The reason for it is pretty obvious - you get in touch with powerful tools like forms, database layer and templating engine but it is still simple enough so you don't get stuck with `DIC` configuration and other more complex topics.
 
-Let's get stared, shall we?
+Let's get started, shall we?
 
 <!--more-->
 
@@ -25,7 +25,7 @@ Now you can go to the web browser and open your nette application (my url is now
 
 ### Configuration
 
-Now that your application is up and running, we will configure a database connection. There are plenty of great database layers. You are maybe familiar with Doctrine. Sure you can use it. Or the native Nette Database. Or some other library. I will walk you through all popular database layers in upcoming articles. Now we will use `Nette Database` and MySql database. Open your configuration local file (`app/config/config.local.neon`). There is already some predefined database configuration, probably looking like this:
+Now that your application is up and running, we will configure a database connection. There are plenty of great database layers. You are maybe familiar with Doctrine. You can surely use it. Or the native Nette Database. Or some other library. I will walk you through all popular database layers in upcoming articles. Now we will use `Nette Database` and MySql database. Open your configuration local file (`app/config/config.local.neon`). There is already some predefined database configuration, probably looking like this:
 
 {% highlight neon %}
 parameters:
@@ -180,7 +180,7 @@ Great! There we have articles and an article detail. We should add a form for co
 
 ## Comments
 
-Article comments will be in the template of the article detail. Let's open that file (`app/presenters/templates/Homepage/detail.latte`) again. We will add articles list and also a form for submitting new comment:
+Article comments will be in the template of the article detail. Let's open that file (`app/presenters/templates/Homepage/detail.latte`) again. We will add article list and also a form for submitting new comment:
 
 {% highlight latte %}
 {block content}
@@ -294,7 +294,7 @@ class HomepagePresenter extends Presenter
 }
 {% endhighlight %}
 
-There you go, we created a simple blog application. You can find the source code [here][link-example]. It is not so pretty to create forms in presenter class so we will talk about components in next chapter.
+There you go, we created a simple blog application. You can find the source code [here][link-example]. It is not so pretty to create forms in a presenter class so we will talk about components in the next chapter.
 
 [link-nette-database]: https://doc.nette.org/en/2.4/database
 [link-nette-database-table]: https://doc.nette.org/en/2.4/database-table
