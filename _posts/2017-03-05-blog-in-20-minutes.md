@@ -294,7 +294,7 @@ class HomepagePresenter extends Presenter
 }
 {% endhighlight %}
 
-There you go, we created a simple blog application. You can find the source code [here][link-example]. It is not so pretty to create forms in presenter class so we will talk about componenets in next chapter.
+There you go, we created a simple blog application. You can find the source code [here][link-example]. It is not so pretty to create forms in presenter class so we will talk about components in next chapter.
 
 [link-nette-database]: https://doc.nette.org/en/2.4/database
 [link-nette-database-table]: https://doc.nette.org/en/2.4/database-table
