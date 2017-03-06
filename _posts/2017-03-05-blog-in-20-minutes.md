@@ -25,7 +25,7 @@ Now you can go to the web browser and open your nette application (my url is now
 
 ### Configuration
 
-Now that your application is up and running, we will configure a database connection. There are plenty of great database layers. You are maybe familiar with Doctrine. Sure you can use it. Or the native Nette Database. Or some other library. I will walk you through all popular database layers in upcoming articles. Now we will use `Nette Database` and MySql database. Open your configuration local file (`config.local.neon`). There is already some predefined database configuration, probably looking like this:
+Now that your application is up and running, we will configure a database connection. There are plenty of great database layers. You are maybe familiar with Doctrine. Sure you can use it. Or the native Nette Database. Or some other library. I will walk you through all popular database layers in upcoming articles. Now we will use `Nette Database` and MySql database. Open your configuration local file (`app/config/config.local.neon`). There is already some predefined database configuration, probably looking like this:
 
 {% highlight neon %}
 parameters:
@@ -37,7 +37,7 @@ database:
     password:
 {% endhighlight %}
 
-You can get rid of the parameters section, it does nothing because it is empty. And change the database section to use your local database:
+You can get rid of the `parameters` section, it does nothing because it is empty. And change the database section to use your local database:
 
 {% highlight neon %}
 database:
@@ -209,7 +209,7 @@ Article comments will be in the template of the article detail. Let's open that 
 {/block}
 {% endhighlight %}
 
-Now the application should tell you that the component commentForm does not exist. It sure does not. We will create it in the `HomepagePresenter` class:
+Now the application should tell you that the component commentForm does not exist. It sure does not. We will create it in the `app/presenters/HomepagePresenter` class:
 
 {% highlight php %}
 <?php
