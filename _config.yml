@@ -12,7 +12,7 @@ owner:
   name: Monday Factory
   homepage: https://mondayfactory.com
   google:
-    analytics:
+    analytics: UA-93108432-1
 
 authors:
   paveljanda:

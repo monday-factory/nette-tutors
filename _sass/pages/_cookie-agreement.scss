@@ -1,0 +1,59 @@
+@keyframes cookies-agreement {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+@-webkit-keyframes cookies-agreement {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+.cookies-agreement {
+  font-size: 13px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-color: black;
+  z-index: 1000;
+  background-color: #46535d;
+  line-height: 50px;
+  min-height: 50px;
+  text-align: center;
+  transform: translateY(0);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  display: none;
+  //font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+  &.toggle {
+    animation-name: cookies-agreement;
+    animation-duration: 0.5s;
+    animation-delay: 0;
+  }
+
+  .container {
+    height: 30px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+
+    .link {
+      margin-left: 1em;
+      cursor: pointer;
+
+      &.success {
+        font-size: 120%;
+      }
+    }
+  }
+}
