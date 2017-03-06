@@ -8,11 +8,23 @@ Don't by shy, create and pull request or start an issue!
 
 ## Upcoming articles
 
-#### Blog in 20 minutes - Bringing in components
-#### Blog in 20 minutes - Ajaxifying stuff
-#### Blog in 20 minutes - Admin, ACL
+#### Quick start
 
-#### Nette & AJAX - Server side support (snippets)
-#### Nette & AJAX - jQuery nette js
-#### Nette & AJAX - nette ajax js
-#### Nette & AJAX - Nittro
+- Configuration options
+
+#### Blog in 20 minutes
+
+- Bringing in components
+- Ajaxifying stuff
+- Admin, ACL
+
+#### Nette & AJAX
+
+- Server side support (snippets)
+- jQuery nette js
+- nette ajax js
+- Nittro
+
+#### A better person
+
+- Contributing to Nette Tutors
