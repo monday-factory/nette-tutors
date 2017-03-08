@@ -14,9 +14,8 @@ Don't by shy, create and pull request or start an issue!
 
 #### Blog in 20 minutes
 
-- Bringing in components
 - Ajaxifying stuff
-- Admin, ACL
+- Admin, Login, ACL
 
 #### Nette & AJAX
 
