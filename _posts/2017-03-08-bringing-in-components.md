@@ -89,6 +89,8 @@ class CommentsControl extends Control
 That looks great but in the success callback there is a redirect. Components can not redirect the page. But presenters can. There is some option, you could do that:
 
 {% highlight php %}
+<?php
+
 $form->onSuccess[] = function(Form $form, ArrayHash $values): void {
   // ...
 
