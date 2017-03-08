@@ -403,6 +403,8 @@ services:
 {% highlight latte %}
 {% endhighlight %}
 
+You can view the complete application code on [github][link-example].
 
-[link-example]: https://github.com/monday-factory/nette-tutors-examples/tree/master/2017-03-05-blog-in-20-minutes/blog
+
+[link-example]: https://github.com/monday-factory/nette-tutors-examples/tree/master/2017-03-08-bringing-in-components/blog
 [link-nette]: https://nette.org/en/
