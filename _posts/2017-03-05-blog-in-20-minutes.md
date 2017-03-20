@@ -5,6 +5,7 @@ categories: [Blog in 20 minutes]
 tags: [config, composer, database, latte, forms]
 author: paveljanda
 order: "1"
+comments: true
 ---
 
 There are plenty of frameworks that start their tutorials with an example blog-like application. The reason for it is pretty obvious - you get in touch with powerful tools like forms, database layer and templating engine but it is still simple enough so you don't get stuck with `DIC` configuration and other more complex topics.
@@ -77,7 +78,7 @@ CREATE TABLE `comment` (
 
 ### Nette\Database vs Nette\Database\Table
 
-<i class="fa fa-info"></i> **Notice!** There are couple of different ways of how to call database queries in `nette/database` package. You should first have a look at documentation of:
+<i class="fa fa-info"></i> **Notice!** There are couple of different ways of how to call database queries in `nette/database` package. You should first take a look at documentation of:
 
 - [database][link-nette-database]
 - [database table][link-nette-database-table]
@@ -87,7 +88,7 @@ CREATE TABLE `comment` (
 
 ## Presenter
 
-The Presenter class should be capable of obtaining articles from database and passing them to the template. Also, there will be an article detail with full article's text and a comment form (which we will add later).
+The Presenter class should be capable of obtaining articles from database and passing them to the template. Also, there is an article detail with full article's text and a comment form (which we will add later).
 
 {% highlight php %}
 <?php
@@ -148,7 +149,7 @@ class HomepagePresenter extends Presenter
 
 ## Template
 
-Templates are rendered using `Latte` engine. All parameters given by the presenter are available in the template. Let's modify the homepage template for displaying all blog articles (`app/presenters/templates/Homepage/default.latte`):
+Templates are rendered by `Latte` engine. All parameters given by the presenter are available in the template. Let's modify the homepage template for displaying all blog articles (`app/presenters/templates/Homepage/default.latte`):
 
 {% highlight latte %}
 {block content}
@@ -180,7 +181,7 @@ Great! There we have articles and an article detail. We should add a form for co
 
 ## Comments
 
-Article comments will be in the template of the article detail. Let's open that file (`app/presenters/templates/Homepage/detail.latte`) again. We will add article list and also a form for submitting new comment:
+Article comments are in the template of the article detail. Let's open that file (`app/presenters/templates/Homepage/detail.latte`) again. We will add article list and also a form for submitting new comment:
 
 {% highlight latte %}
 {block content}
@@ -294,7 +295,8 @@ class HomepagePresenter extends Presenter
 }
 {% endhighlight %}
 
-There you go, we created a simple blog application. You can find the source code [here][link-example]. It is not so pretty to create forms in a presenter class so we will talk about components in the next chapter.
+There you go, we created a simple blog application. You can find the source code [here][link-example]. It is not so pretty to create forms in a presenter class so we will talk about components in the <a href="{{ site.baseurl }}{% post_url 2017-03-08-bringing-in-components %}
+">next chapter</a>.
 
 [link-nette-database]: https://doc.nette.org/en/2.4/database
 [link-nette-database-table]: https://doc.nette.org/en/2.4/database-table

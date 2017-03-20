@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "First instalation"
+title: "First installation"
 categories: [Quick start]
 tags: [config, composer]
 author: paveljanda
 order: "2"
+comments: true
 ---
 
-First things first! Learn how to install **Nette** **framework** using [Composer][link-composer]. Composer is now the best and the only tool for managing dependencies in PHP world. If you're not already familiar with it yet, take a look at its [web][link-composer].
+First things first! In this tutorial we are going to cover how to install **Nette** **framework** using [Composer][link-composer]. Composer is now the best and the only tool for managing dependencies in PHP world. If you're not familiar with it yet, take a look at its [web][link-composer].
 
 Nette framework is available also as a [ZIP archive][link-download-nette-zip], but we shall continue the composer way..
 
@@ -55,14 +56,14 @@ Start by typing `composer create-project nette/web-project` in your command line
 
 ### nette/sandbox
 
-On the other hand, `nette/sandbox` is packed with some examples. You can find here a form, a tiny tiny security layer and other snippets of code. In the `examples` directory there are more examples of standalone applications.
+On the other hand, `nette/sandbox` is packed with some examples. You can find there a form, a tiny tiny security layer and other snippets of code. In the `examples` directory there are more examples of standalone applications.
 
 
 ### From scratch
 
-You can surely start the project completely from scratch (or maybe you are migrating old project and you want to use Nette framework). In that case, you should start with the business logic you want to migrate first. Is it `nette/database`? Or maybe the first step should be the templating engine Latte (`latte/latte`)?
+You can surely start the project completely from scratch (or maybe you are migrating old project and you want to use the Nette framework). In that case, you should start with the business logic you want to migrate first. Is it `nette/database`? Or maybe the first step should be the templating engine Latte (`latte/latte`)?
 
-I strongly recommend you to begin with vendor `tracy/debugger`. **Tracy** is a pretty sofisticated debugger tool. It will help you with tracing exceptions, dumping variables, logging errors and exceptions, and more. Take a look at Tracy homepage: [tracy.nette.org][link-tracy].
+I strongly recommend you to begin with vendor `tracy/debugger`. **Tracy** is a pretty sofisticated debugger tool. It will help you with tracking exceptions, dumping variables, logging errors and exceptions, and more. Take a look at Tracy homepage: [tracy.nette.org][link-tracy].
 
 
 [link-composer]: https://getcomposer.org/

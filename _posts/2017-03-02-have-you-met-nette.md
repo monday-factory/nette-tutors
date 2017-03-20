@@ -5,6 +5,7 @@ categories: [Quick start]
 tags: [official]
 author: paveljanda
 order: "1"
+comments: true
 ---
 
 Let's start the first chapter of **{{ site.name }}** with an introduction into the ecosystem around the **[Nette framework][link-nette]**.
@@ -17,16 +18,16 @@ You are of course curious about where to discuss your projects, who to ask for h
 
 Go visit the official [Nette Framework][link-nette] website. There are plenty of documentation articles and snippets of code.
 
-You will find there the basics. Is there some `HTTP` layer in the framework, what does the `Presenter` class, can I use a templating engine to make the `HTML` reusable and the work with it faster? Does the framework provide builders for creating `HTML` forms? Dependency Injection, Sessions, Mailing, Database, Security, Caching, Autoloading and all other interesting parts of the framework are described right there.
+You will find there the basics. Is there any `HTTP` layer in the framework, what does the `Presenter` class do, can I use a templating engine to make the `HTML` reusable and the work with it faster? Does the framework provide builders for creating `HTML` forms? Dependency Injection, Sessions, Mailing, Database, Security, Caching, Autoloading and all other interesting parts of the framework are described right there.
 
 
 ## Forum `-> forum.nette.org/en`
 
 [Nette Forum][link-nette-forum] provides the best opportunity (unlike the other interactive channels) to create a topic and keep all the related history at one place. Don't be shy to create these topics! People will welcome your questions and send their answers so you can continue in learning Nette.
 
-You are also welcomme to contribute with your ideas and practices.
+You are also welcome to contribute with your ideas and practices.
 
-Before the new version of the framework is released, there appears always a topic with pre-release notes. You can comment on them, test the version and share your observations.
+Before the new version of the framework is released, there is always a topic with pre-release notes. You can comment on them, test the version and share your observations.
 
 
 ## Gitter `-> gitter.im/nette/nette`
@@ -38,19 +39,19 @@ If you prefer more direct way how to ask people in Nette community questions, us
 
 Of course the Nette Framework is open source project! You can browse the code and contribute to it on [GitHub][link-github]. Framework is distributed in many separate packages, but I will cover that topic in following article.
 
-To the contribution point - feel free to submit new pull requests and issues on [GitHub][link-github]. If your pull request gets rejected, don't be sad about it. You can try later or you can discuss why is it so with other contributors and community members.
+To the contribution point - feel free to submit new pull requests and issues on [GitHub][link-github]. If your pull request get rejected, don't be sad about it. You can try later or you can discuss why is it so with other contributors and community members.
 
 
 ## Componette `-> componette.com`
 
-[Componette][link-componette] puts together extensions and other vendors used in Nette. What are extensions does not have to bother you right now, we will talk about it later.
+[Componette][link-componette] puts together extensions and other vendors used in Nette. Do not bother with questions like what are extensions and so on, we will go through it soon.
 
 In general, when you can't find particular tool natively implemented in Nette, you will probably find that tool (or extension or component or something else) on Componette.
 
 
 ## {{ site.name }} `-> nette-tutors.mondayfactory.com`
 
-There are many other blogs and articles about Nette but they are mostly written in Czech because the Nette framework is *made in the Czech Republic*. But don't worry! After all - aren't your reading the {{ site.name }} website in english right now? :)
+There are many other blogs and articles about Nette but they are mostly written in Czech because the Nette framework iswas created in the Czech Republic. That’s why we have decided to create english tutorial blog full of code examples to make your first steps with Nette Framework way easier.
 
 We will cover many topics of the web development in Nette in upcomming articles. Bunch of tutorials and examples is comming!
 

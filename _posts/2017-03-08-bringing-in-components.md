@@ -5,16 +5,17 @@ categories: [Blog in 20 minutes]
 tags: [config, latte, forms, components]
 author: paveljanda
 order: "3"
+comments: true
 ---
 
-Creating forms in presenters is simple, fast and effective. But it's definitely not pretty. Nette comes with components. You can encapsulate many semantically related stuff into one component and render this component. It will have its own logic and also a template.
+Creating forms in presenters is simple, fast and effective. But it's definitely not pretty. Nette comes with components. You can encapsulate many semantically related stuff into one component and render this component wherever you need it to render. It has its own logic and also a template.
 
-The more time you will spend with Nette the more you'll leave your presenters empty and build your web application using a bunch of **reusable** components. There will exist a component for cart, component for contact form, for login... I think you know where I'm going.
+The more time you will spend with Nette the more you'll leave your presenters empty and build your web application using a bunch of **reusable** components. There will exist a component for cart, component for contact form, for login... I think you know you got my point.
 
 <!--more-->
 
 Start with cloning the repository we created in the <a href="{{ site.baseurl }}{% post_url 2017-03-05-blog-in-20-minutes %}
-">previous</a> article. You might find it on [github][link-example].
+">previous</a> article. You can find it on [github][link-example].
 
 What are we going to do:
 
@@ -24,7 +25,7 @@ What are we going to do:
 
 ## UI\Component
 
-We already know how to create component from the Nette Framework [documentation][link-nette]. As I wrote, we should move the comment form factory to that newly created component (`app/components/CommentsControl/CommentsControl.php`):
+We already know how to create component from the Nette Framework [documentation][link-nette]. As I wrote, we should move the comment form factory to the newly created component (`app/components/CommentsControl/CommentsControl.php`):
 
 {% highlight php %}
 <?php
@@ -86,7 +87,7 @@ class CommentsControl extends Control
 }
 {% endhighlight %}
 
-That looks great but in the success callback there is a redirect. Components can not redirect the page. But presenters can. There is some option, you could do that:
+That looks great but there is one issue (redirect in success callback). Components cannot redirect the page. But presenters can. Do not worry, bellow are shown two ways how to do that in Component
 
 {% highlight php %}
 <?php
@@ -100,7 +101,7 @@ $form->onSuccess[] = function(Form $form, ArrayHash $values): void {
 };
 {% endhighlight %}
 
-But that would make the components unreusable. Nette does have an elegant solution - events hidden in Nette\SmartObject trait.
+But that means that components are not reusable. Solution, anybody? Ok, let me tell you. Nette does have an elegant solution - events hidden in Nette\SmartObject trait.
 
 {% highlight php %}
 <?php
